@@ -127,12 +127,12 @@ jobs:
 
         # - name: wait for backend before running frontend
         #   run: |
-        #     wait-on http://localhost:8080/ && npm run devReact
+        #     wait-on http://mynt.resolve.bar:8080/ && npm run devReact
         
         - name: wait for React server then run Cypress tests
           run: |
             cd frontend
-            wait-on http://localhost:9001/ && npm run e2e:chrome
+            wait-on http://mynt.resolve.bar:9001/ && npm run e2e:chrome
 
         
 

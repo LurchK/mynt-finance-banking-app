@@ -3,13 +3,13 @@ describe('user must be logged in to access a protected page', () => {
         let protectedRoutes = ['remittance', 'dashboard', 'accounts']
         protectedRoutes.forEach((route) => {
             cy.visit(`/${route}`)
-            cy.url().should('eq', 'http://localhost:9001/login')
+            cy.url().should('eq', 'http://mynt.resolve.bar:9001/login')
 
         })
     })
 
     it("can access transfer page when logged in", () => {
         cy.loginTestUser()
-        cy.url().should('eq', 'http://localhost:9001/accounts')
+        cy.url().should('eq', 'http://mynt.resolve.bar:9001/accounts')
     })
 })

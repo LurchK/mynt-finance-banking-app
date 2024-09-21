@@ -6,7 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "http://localhost:9001",
+    baseUrl: "http://mynt.resolve.bar:9001",
     specPattern: [
       "cypress/e2e/*.cy.js",
       "cypress/frontendOnly/*.cy.js"

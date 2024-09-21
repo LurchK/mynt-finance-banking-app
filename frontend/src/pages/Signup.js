@@ -13,7 +13,7 @@ const signupInputFields = [
     {
         label: "Email",
         id: "email",
-        placeholder: "james@jameslove.com",
+        placeholder: "hello@email.com",
         type: "email",
         value: "",
         required: true,
@@ -22,7 +22,7 @@ const signupInputFields = [
     {
         label: "First Name",
         id: "firstname",
-        placeholder: "James",
+        placeholder: "Firstname",
         type: "firstname",
         value: "",
         required: true,
@@ -31,7 +31,7 @@ const signupInputFields = [
     {
         label: "Surname",
         id: "lastname",
-        placeholder: "Love",
+        placeholder: "Lastname",
         type: "lastname",
         value: "",
         required: true,
@@ -40,7 +40,7 @@ const signupInputFields = [
     {
         label: "Date of Birth",
         id: "dob",
-        placeholder: "16 08 1996",
+        placeholder: "01 01 2000",
         type: "date",
         value: "",
         required: true,
@@ -49,7 +49,7 @@ const signupInputFields = [
     {
         label: "Address",
         id: "address",
-        placeholder: "BS8 1HB",
+        placeholder: "BS8 1QU",
         type: "address",
         value: "",
         required: true,
@@ -58,7 +58,7 @@ const signupInputFields = [
     {
         label: "Phone Number",
         id: "phoneNumber",
-        placeholder: "+44 7824792473",
+        placeholder: "+44 1234567890",
         type: "phoneNumber",
         value: "",
         required: true,

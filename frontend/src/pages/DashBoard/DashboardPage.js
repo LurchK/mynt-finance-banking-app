@@ -72,7 +72,7 @@ function DashboardPage() {
   useEffect(() => {
     setLoading(true); 
 
-    fetch(`http://localhost:8080/api/v1/transaction?created_at_from=${year}-${addZeroIfLessThanTen(month)}-${startDay}&created_at_to=${year}-${addZeroIfLessThanTen(month)}-${endDay}`, {
+    fetch(`http://mynt.resolve.bar:8080/api/v1/transaction?created_at_from=${year}-${addZeroIfLessThanTen(month)}-${startDay}&created_at_to=${year}-${addZeroIfLessThanTen(month)}-${endDay}`, {
       headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
     })
       .then(response => response.json())

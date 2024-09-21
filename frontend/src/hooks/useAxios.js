@@ -10,7 +10,7 @@ function useAxios(endpoint, method = "get", options = {}) {
   const fetchResult = async () => {
     try {      
       const response = await axios({
-        url: `http://localhost:8080/api/v1/${endpoint}`,
+        url: `http://mynt.resolve.bar:8080/api/v1/${endpoint}`,
         method,
         headers: {
           'Content-Type': 'application/json;charset=utf-8',

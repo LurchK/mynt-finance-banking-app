@@ -29,7 +29,7 @@ function AccountPage() {
   useEffect(() => {
     setLoading(true); 
 
-    fetch(`http://localhost:8080/api/v1/transaction?currency=${currency}&per_page=${5}&page=${pages}`, {
+    fetch(`http://mynt.resolve.bar:8080/api/v1/transaction?currency=${currency}&per_page=${5}&page=${pages}`, {
       headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
     })
       .then(response => response.json())
@@ -46,7 +46,7 @@ function AccountPage() {
   useEffect(() => {
     setLoading(true);
 
-    fetch(`http://localhost:8080/api/v1/balance/${currency}`, {
+    fetch(`http://mynt.resolve.bar:8080/api/v1/balance/${currency}`, {
       headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
     })
       .then(response => response.json())

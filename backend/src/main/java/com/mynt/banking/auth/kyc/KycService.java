@@ -69,8 +69,8 @@ public class KycService {
         SDKResponse sdkResponceDTO = new SDKResponse();
 
         String apiToken = "Token token="+onfido;
-        referrer = "http://localhost:9001/signup/*";
-        redirectURL = "http://localhost:9001/kyc";
+        referrer = "http://mynt.resolve.bar:9001/signup/*";
+        redirectURL = "http://mynt.resolve.bar:9001/kyc";
 
         request.setEmail(request.getEmail().toLowerCase());
 

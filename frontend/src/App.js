@@ -32,7 +32,7 @@ const App = () => {
 
     const logOut = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/v1/auth/logout', {
+            const response = await fetch('http://mynt.resolve.bar:8080/api/v1/auth/logout', {
                 method: 'POST',
                 headers: { 
                     "Authorization": sessionStorage.getItem('access'),

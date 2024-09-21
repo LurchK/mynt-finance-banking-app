@@ -76,7 +76,7 @@ export default function DepositPage({ onClose, onComplete, isComplete }) {
   };
 
   const handleConfirmOnClick = () => {
-    fetch('http://localhost:8080/api/v1/flutterwave/sendMpesaToCurrencyCloud', {
+    fetch('http://mynt.resolve.bar:8080/api/v1/flutterwave/sendMpesaToCurrencyCloud', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem('access')}`,

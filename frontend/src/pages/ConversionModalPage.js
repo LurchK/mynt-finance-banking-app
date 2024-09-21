@@ -27,7 +27,7 @@ export default function ConversionModalPage({ onClose, currency }) {
   const toast = useToast();
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/rates/getBasicRates?sell_currency=${currency}&buy_currencies=KES`, {
+    fetch(`http://mynt.resolve.bar:8080/api/v1/rates/getBasicRates?sell_currency=${currency}&buy_currencies=KES`, {
       headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
     })
     .then(response => response.json())
@@ -51,7 +51,7 @@ export default function ConversionModalPage({ onClose, currency }) {
   };
 
   const handleConfirmOnClick = () => {
-    fetch('http://localhost:8080/api/v1/flutterwave/cloudCurrency2Mpesa', {
+    fetch('http://mynt.resolve.bar:8080/api/v1/flutterwave/cloudCurrency2Mpesa', {
       method: "POST",
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem('access')}`,

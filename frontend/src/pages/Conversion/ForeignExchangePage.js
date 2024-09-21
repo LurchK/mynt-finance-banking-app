@@ -31,7 +31,7 @@ export default function ForeignExchangePage() {
   const fetchExchangeRates = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/api/v1/rates/getBasicRates', {
+      const response = await fetch('http://mynt.resolve.bar:8080/api/v1/rates/getBasicRates', {
         headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
       });
       const data = await response.json();
@@ -55,7 +55,7 @@ export default function ForeignExchangePage() {
   useEffect(() => {
     if (baseCurrency) {
       setLoading(true);
-      fetch('http://localhost:8080/api/v1/rates/updateBaseCurrency', {
+      fetch('http://mynt.resolve.bar:8080/api/v1/rates/updateBaseCurrency', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${sessionStorage.getItem('access')}`,

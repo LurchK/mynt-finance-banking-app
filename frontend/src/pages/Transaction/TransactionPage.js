@@ -43,7 +43,7 @@ export default function TransactionPage() {
   useEffect(() => {
     setLoading(true);
 
-    fetch(`http://localhost:8080/api/v1/transaction/${transactionType}/${transactionId}`, {
+    fetch(`http://mynt.resolve.bar:8080/api/v1/transaction/${transactionType}/${transactionId}`, {
       headers: { 'Authorization': `Bearer ${sessionStorage.getItem('access')}` }
     })
       .then(response => response.json())

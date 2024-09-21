@@ -22,7 +22,7 @@ export default function ConversionConfirmPage() {
   const toast = useToast();
 
   const handleOnClick = async () => {
-    await fetch('http://localhost:8080/api/v1/conversions/createConversion', {
+    await fetch('http://mynt.resolve.bar:8080/api/v1/conversions/createConversion', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem('access')}`,

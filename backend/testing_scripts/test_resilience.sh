@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configuration
-AUTH_URL="http://localhost:8080/api/v1/auth/authenticate"
-REFRESH_URL="http://localhost:8080/api/v1/auth/refresh-token"
-API_URL="http://localhost:8080/api/v1/transaction"
+AUTH_URL="http://mynt.resolve.bar:8080/api/v1/auth/authenticate"
+REFRESH_URL="http://mynt.resolve.bar:8080/api/v1/auth/refresh-token"
+API_URL="http://mynt.resolve.bar:8080/api/v1/transaction"
 EMAIL="alexandermichael@mail.com"
 PASSWORD="cake"
 ACCESS_TOKEN=""

@@ -53,6 +53,7 @@ module.exports = {
         compress: true,
         port: 9001,
         historyApiFallback: true,
+        allowedHosts: "all",
     },
     performance: {
         hints: false,
